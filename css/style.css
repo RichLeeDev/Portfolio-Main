@@ -1,11 +1,14 @@
 
 .bg-overlay {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #EFF4E1;
-    height: 600px;
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #EFF4E1;
+  height: 700px;
+}
+.header-container {
+  padding-top: 50px;
 }
 .text-primary {
   color: #DC8262;
@@ -19,4 +22,8 @@
 }
 .navbar-nav a {
   margin-left: 20px;
+}
+.lead {
+  margin-top: 30px;
+  line-height: 2.0;
 }
