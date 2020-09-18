@@ -1,3 +1,15 @@
+/* ####################################################
+B A S E  S T Y L E S
+#################################################### */
+
+h1 {font-size:5rem;} /*1rem = 16px*/
+body {
+  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+/* ####################################################
+L A Y O U T  S T Y L E S
+#################################################### */
 
 .bg-overlay {
   background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
@@ -5,7 +17,7 @@
   background-size: cover;
   background-position: center center;
   color: #EFF4E1;
-  height: 700px;
+  height: 800px;
 }
 .header-container {
   padding-top: 50px;
@@ -26,4 +38,28 @@
 .lead {
   margin-top: 30px;
   line-height: 2.0;
+}
+
+/* ####################################################
+M E D I A  Q U E R I E S
+#################################################### */
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  h1 {font-size:6rem;} /*1rem = 16px*/
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  h1 {font-size:6.7rem;} /*1rem = 16px*/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {font-size:7.2rem;} /*1rem = 16px*/
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+  h1 {font-size:8.5rem;} /*1rem = 16px*/
 }
