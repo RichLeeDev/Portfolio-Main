@@ -16,8 +16,9 @@ L A Y O U T  S T Y L E S
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  color: #EFF4E1;
-  height: 800px;
+  color: #ffa949;
+  height: 850px;
+  padding-top: 120px;
 }
 .header-container {
   padding-top: 50px;
@@ -27,6 +28,16 @@ L A Y O U T  S T Y L E S
 }
 .available {
   color: green;
+}
+.skill {
+  overflow: hidden;
+}
+.background {
+  color: white;
+  background-color: #434a52;
+  border-top: 10px solid #ffa949;
+  min-height: 300px;
+  max-height: 750px;
 }
 .name {
   letter-spacing: 1.1;
@@ -38,6 +49,11 @@ L A Y O U T  S T Y L E S
 .lead {
   margin-top: 30px;
   line-height: 2.0;
+}
+.main-header {
+  background-color: #ffa949;
+  padding-top: 170px;
+  height: 850px;
 }
 
 /* ####################################################
