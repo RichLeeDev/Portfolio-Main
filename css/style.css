@@ -1,11 +1,24 @@
 /* ####################################################
 B A S E  S T Y L E S
 #################################################### */
-
-h1 {font-size:5rem;} /*1rem = 16px*/
-body {
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+* {
+  box-sizing: border-box;
 }
+*, :after, :before {
+    border: 0 solid #ebebeb;
+}
+h1 {font-size:5rem;} /*1rem = 16px*/
+
+nav {
+    display: block;
+}
+a {
+    background-color: transparent;
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
 
 /* ####################################################
 L A Y O U T  S T Y L E S
@@ -34,10 +47,11 @@ L A Y O U T  S T Y L E S
 }
 .background {
   color: white;
-  background-color: #434a52;
-  border-top: 10px solid #ffa949;
+  background-color: #6BDCB7;
+  border-top: 10px solid #8A378D;
   min-height: 300px;
   max-height: 750px;
+  overflow: auto;
 }
 .name {
   letter-spacing: 1.1;
@@ -55,6 +69,94 @@ L A Y O U T  S T Y L E S
   padding-top: 170px;
   height: 850px;
 }
+.flex {
+    display: flex;
+}
+.container {
+    width: 100%;
+}
+.relative {
+    position: relative;
+}
+.top-0 {
+    top: 0;
+}
+.right-0 {
+    right: 0;
+}
+.absolute {
+  position: absolute;
+}
+
+/* ####################################################
+H E A D E R   S T Y L E S
+#################################################### */
+
+.text-white {
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255,255,255,var(--text-opacity));
+}
+.text-purple {
+  color: #8A378D;
+}
+.font-display {
+    font-family: Neuzeit S LT Std, sans-serif;
+}
+.bg-green {
+    --bg-opacity: 1;
+    background-color: #4ee1b5;
+    background-color: rgba(78,225,181,var(--bg-opacity));
+}
+.text-base {
+    font-size: 1rem;
+}
+.h-screen {
+    height: 100vh;
+}
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.mt-10 {
+    margin-top: 2.5rem;
+}
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.items-center {
+    align-items: center;
+}
+.opacity-75 {
+    opacity: .75;
+}
+.text-lg {
+    font-size: 1.125rem;
+}
+.font-black {
+    font-weight: 900;
+}
+.font-body {
+    font-family: NeuzeitGro,sans-serif;
+}
+.r-logo {
+  border-radius: 50%;
+  height: 100px;
+  width: auto;
+  opacity: 1;
+}
 
 /* ####################################################
 M E D I A  Q U E R I E S
@@ -64,7 +166,9 @@ M E D I A  Q U E R I E S
 @media (min-width: 544px) {
   h1 {font-size:6rem;} /*1rem = 16px*/
 }
-
+@media (min-width: 640px) {
+.container { max-width: 640px;}
+}
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   h1 {font-size:6.7rem;} /*1rem = 16px*/
@@ -74,7 +178,12 @@ M E D I A  Q U E R I E S
 @media (min-width: 992px) {
   h1 {font-size:7.2rem;} /*1rem = 16px*/
 }
-
+@media (min-width: 1024px) {
+  .container { max-width: 1024px;}
+}
+@media (min-width: 1280px) {
+  .container { max-width: 1550px;}
+}
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) {
   h1 {font-size:8.5rem;} /*1rem = 16px*/

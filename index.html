@@ -24,53 +24,30 @@
 
   <body>
 
-    <!-- Nav Bar -->
+    <!-- Header + Nav -->
 
-    <div class="container clearfix">
-      <nav class="nav-header navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <a class="navbar-brand" href="#top">RichLeeDesign</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#projects">Projects</a>
+    <div class="bg-green text-white font-display">
+      <div class="relative container mx-auto h-screen flex items-center py-4 px-6">
+        <header class="w-full xl:w-1/2">
+          <img class="w-24 md:w-32 mb-6 xl:mb-12 r-logo" src="./images/freepik/R-logo.jpg" alt="Backstage Logo">
+          <div>
+            <h2 class="text-xl md:text-2xl lg:text-3xl mb-6 xl:mb-10 font-black font-display">Hi. I'm a Front-End Developer.</h2>
+            <p class="text-lg md:text-xl lg:text-2xl">Creating dynamic and responsive pages that have a priority in loading speed and performance. Minimalistic styling.</p>
           </div>
-        </div>
-      </nav>
-    </div>
-
-    <!-- /Nav Bar -->
-
-    <!-- JumboTron -->
-
-
-  <div class="jumbotron jumbotron-fluid bg-overlay">
-    <div class="row">
-      <div class="header-container col-md text-center mt-5">
-        <h1 class="mt-5 pt-5 name">Richard Lee</h1>
-        <h4 class="text-muted mt-1">Front-End Developer</h4>
-        <h4 class="text-muted">California, U.S.</h4>
-        <h5 class="lead mt-3">Current: </h5>
-        <p class="available">
-          Available
-        </p>
+        </header>
+        <nav class="absolute top-0 right-0 mt-10 px-6">
+          <a class="opacity-75 text-lg font-body text-purple font-black" href="#" @click="open = true">menu</a>
+        </nav>
       </div>
     </div>
-  </div>
-
-
-    <!-- /JumboTron -->
 
     <!-- About Me -->
 
-    <div class="container-fluid text-center mt-5 justify-content-center align-items-center" id="about">
+    <div class="container-fluid text-center justify-content-center align-items-center" id="about">
       <div class="row">
-        <div class="col-lg-6 background mx-3 mt-5 mb-5 order-lg-2 text-center">
-          <h2 class="mb-2">Background</h2>
-          <p class="lead">
+        <div class="col-lg-12 background h-screen mb-5 text-center">
+          <h2 class="mb-2 mt-10">Background</h2>
+          <p class="lead px-5 text-center">
             Started work at the young age of 16 at my families clothing business which was when I really learned about diligence and hard-work.
             Worked in the hospitality field in my early 20s which improved my social skills, teamwork, and work ethics just to name a few.
             Always had an interest in the tech field, spent a good chunk of my college years to search what I had a passion towards and found web development.
@@ -78,7 +55,8 @@
             I'm great with a team or working indivdual and I'm quick to learn and adapt.
           </p>
         </div>
-        <div class="col-lg-2 list-group skill mx-3 mt-5 mb-5 order-lg-1 text-center">
+
+        <div class="col-lg-5 list-group skill mx-3 mt-5 mb-5 text-center">
           <h2 class="">Skills</h2>
           <a href="#" class="list-group-item list-group-item-action rounded mt-3 mx-2"><strong>HTML</strong></a>
           <a href="#" class="list-group-item list-group-item-action rounded mt-3 mx-2"><strong>CSS</strong></a>
@@ -90,7 +68,7 @@
           <a href="#" class="list-group-item list-group-item-action rounded mt-3 mx-2"><strong>GIT</strong></a>
           <a href="#" class="list-group-item list-group-item-action rounded mt-3 mx-2"><strong>SASS</strong></a>
         </div>
-        <div class="col-lg-2  list-group mx-3 mt-5 mb-5 order-lg-3 text-center">
+        <div class="col-lg-5  list-group mx-3 mt-5 mb-5 text-center">
           <h2 class="mb-2">Hobbies</h2>
           <a href="#" class="list-group-item list-group-item-action rounded mt-3 mx-2"><strong>Videos Games(Mainly FPS)</strong>: Valorant</a>
           <a href="#" class="list-group-item list-group-item-action rounded mt-3 mx-2"><strong>Golf</strong>: Wilson or Balboa usually but I like new golf courses</a>
@@ -217,7 +195,7 @@
 
     <!-- footer -->
 
-<div class="row py-3">
+<div class="row py-3 bg-green text-white">
   <div class="col-md-7">
     <ul class="nav">
   <li class="nav-item">
